@@ -11,5 +11,8 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 # Install git
 RUN apt install -y git
 
+## create directories
+RUN mkdir -p /output
+
 ## Install R-packages
 RUN Rscript /install_packages.R
